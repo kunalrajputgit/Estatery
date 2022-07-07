@@ -25,7 +25,6 @@ const intialData = [
     size: "3x5",
     popular: true,
   },
-
   {
     imgSrc:
       "https://images.pexels.com/photos/32870/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400",
@@ -94,9 +93,9 @@ const filterReducer = (state = intialData, action) => {
         );
         return filterData;
       } else {
-        return alert("❌ Filtering Fields Can't Be Empty ❌");
+        alert("⚠ Filtering Fields Can't Be Empty ");
+        return state;
       }
-
       break;
 
     default:

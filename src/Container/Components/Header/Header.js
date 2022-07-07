@@ -1,4 +1,4 @@
-import { AreaChartOutlined, LoginOutlined } from "@ant-design/icons";
+import { AreaChartOutlined } from "@ant-design/icons";
 import "./Header.css";
 
 const Nav = () => {

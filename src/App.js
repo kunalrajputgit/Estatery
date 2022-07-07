@@ -1,5 +1,5 @@
 import "./App.css";
-import DashBoard from "./Container/Components/DashBoard/DashBoard";
+import DashBoard from "./container/components/dashBoard/DashBoard";
 import { Provider } from "react-redux";
 import store from "./store";
 

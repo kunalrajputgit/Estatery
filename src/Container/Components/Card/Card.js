@@ -1,4 +1,4 @@
-import { ApartmentOutlined, StarOutlined } from "@ant-design/icons";
+import { StarOutlined } from "@ant-design/icons";
 import "./Card.css";
 const Card = ({ data }) => {
   const { price, address, location, size, imgSrc, beds, bathrooms, popular } =
@@ -6,7 +6,7 @@ const Card = ({ data }) => {
   return (
     <div className="cardContainer">
       <div className="imgContainer">
-        <img src={imgSrc} />
+        <img src={imgSrc} alt="Property" />
       </div>
       {popular ? (
         <h4 className="Badge">

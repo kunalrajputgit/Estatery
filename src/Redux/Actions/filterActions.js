@@ -1,4 +1,4 @@
-import { ActionTypes } from "../Constants/action-types";
+import { ActionTypes } from "../constants/action-types";
 
 const filterData = (data) => {
   const { FILTER_DATA } = ActionTypes;

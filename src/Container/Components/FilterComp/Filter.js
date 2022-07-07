@@ -1,8 +1,7 @@
 import { useState } from "react";
-import setData from "../../../Redux/Actions/filterActions";
+import setData from "../../../redux/actions/filterActions";
 import { useDispatch } from "react-redux";
 import "./Filter.css";
-import { SearchOutlined } from "@ant-design/icons";
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -59,7 +58,6 @@ const Filter = () => {
   const [propertyMinPrice, setPropertyMinPrice] = useState(0);
   const [propertyMaxPrice, setPropertyMaxPrice] = useState(0);
   const [propertType, setPropertyType] = useState("");
-  // const [selectedData, setSelectedData] = useState({});
 
   const selectedData = {
     location: propertyLocation,
@@ -73,14 +71,13 @@ const Filter = () => {
     <div className="filterContainer">
       <div>
         <h5 className="filterHeading filterLocation">Location : </h5>
-
         <select
           onChange={(e) => {
             setPropertyLocation(e.target.value);
           }}
         >
           {location.map((data, index) => (
-            <option key={index} value={data}>
+            <option className="locOp" key={index} value={data}>
               {data}
             </option>
           ))}
